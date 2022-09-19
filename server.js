@@ -4,7 +4,7 @@ const app = express () ;
 const middleware = (req , res , next) => {
     const day =d.getDay();
     const hour =d.getHours();
-    if ((day >=2 && day<=6 )  && (hour >=09 && hour<=17 )  === true ){
+    if ((day >=1 && day<=6 )  && (hour >=9 && hour<=17 )  === true ){
         next();
          }
         else {
